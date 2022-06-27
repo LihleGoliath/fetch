@@ -8,4 +8,41 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap:10px
+}
+
+.container{
+    background-color: aqua;
+    border: 2px black solid;
+    
+}
+.container-within{
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 0.8s;
+text-align: center;
+transform-style: preserve-3d;
+}
+.container:hover .container-within{
+    transform: rotateX(180deg);
+}
+.front-container,.back-container{
+    
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+  
+}
+.front-container{
+    position: absolute;
+    background-color: aqua;
+    color: black;
+    
+}
+.back-container{
+
+    background-color: aqua;
+    color: black;
+    transform: rotateX(180deg);
 }

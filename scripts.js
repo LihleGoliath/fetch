@@ -30,9 +30,17 @@ function displayPokemon(pokemonArray) {
     pokemonArray.forEach((pokemon)=> {
       document.querySelector("#pokemonList").innerHTML += `  
       <div class="container">
+      <div class="container-within">
+      <div class="front-container">
       <img src=${pokemon.sprites.front_default} alt="Front">
       <p>${pokemon.name}</p>      
-      </div>      
+      </div>
+      <div class="back-container">
+      <img src=${pokemon.sprites.back_default} alt="Front">
+      <p>${pokemon.name}</p>   
+      </div>
+      </div>    
+      </div>   
       `;
     });
   }
