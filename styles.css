@@ -3,12 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: linear-gradient(to left top, #24bdb4, #00a1ba, #0083bc, #0062b1, #1f3d95);
+}
+.head{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
 
 #pokemonList{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap:10px
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .container{
